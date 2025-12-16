@@ -1,0 +1,1166 @@
+{
+	"info": {
+		"_postman_id": "430c3e71-f0bb-47eb-aa83-52e149d93c8b",
+		"name": "My First Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50824464",
+		"_collection_link": "https://n-odame-8465769.postman.co/workspace/Nadiya's-Workspace~ed94ba4c-07a8-4747-8c5a-85faad47e0da/collection/50824464-430c3e71-f0bb-47eb-aa83-52e149d93c8b?action=share&source=collection_link&creator=50824464"
+	},
+	"item": [
+		{
+			"name": "Get Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Method Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.github+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:13:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"97b11203480ab2c2c41cf6513baa4e1c8df9bbd3571dbe5b98029a1b147e0b07\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4999"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "1"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "F4AD:1BD7FA:3D65F2:5AFCF1:69416900"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1\",\n        \"repository_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test\",\n        \"labels_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/labels{/name}\",\n        \"comments_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/comments\",\n        \"events_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/events\",\n        \"html_url\": \"https://github.com/Nadia-Odame/postman-test/issues/1\",\n        \"id\": 3731170481,\n        \"node_id\": \"I_kwDOQpMf3c7eZSSx\",\n        \"number\": 1,\n        \"title\": \"Updated API Test Issue\",\n        \"user\": {\n            \"login\": \"Nadia-Odame\",\n            \"id\": 221729107,\n            \"node_id\": \"U_kgDODTdRUw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/221729107?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/Nadia-Odame\",\n            \"html_url\": \"https://github.com/Nadia-Odame\",\n            \"followers_url\": \"https://api.github.com/users/Nadia-Odame/followers\",\n            \"following_url\": \"https://api.github.com/users/Nadia-Odame/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/Nadia-Odame/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/Nadia-Odame/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/Nadia-Odame/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/Nadia-Odame/orgs\",\n            \"repos_url\": \"https://api.github.com/users/Nadia-Odame/repos\",\n            \"events_url\": \"https://api.github.com/users/Nadia-Odame/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/Nadia-Odame/received_events\",\n            \"type\": \"User\",\n            \"user_view_type\": \"public\",\n            \"site_admin\": false\n        },\n        \"labels\": [\n            {\n                \"id\": 9833770311,\n                \"node_id\": \"LA_kwDOQpMf3c8AAAACSiNtRw\",\n                \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/bug\",\n                \"name\": \"bug\",\n                \"color\": \"d73a4a\",\n                \"default\": true,\n                \"description\": \"Something isn't working\"\n            },\n            {\n                \"id\": 9834024234,\n                \"node_id\": \"LA_kwDOQpMf3c8AAAACSidNKg\",\n                \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/api-test\",\n                \"name\": \"api-test\",\n                \"color\": \"ededed\",\n                \"default\": false,\n                \"description\": null\n            }\n        ],\n        \"state\": \"open\",\n        \"locked\": false,\n        \"assignee\": null,\n        \"assignees\": [],\n        \"milestone\": null,\n        \"comments\": 0,\n        \"created_at\": \"2025-12-15T16:19:05Z\",\n        \"updated_at\": \"2025-12-15T16:58:06Z\",\n        \"closed_at\": null,\n        \"author_association\": \"OWNER\",\n        \"active_lock_reason\": null,\n        \"sub_issues_summary\": {\n            \"total\": 0,\n            \"completed\": 0,\n            \"percent_completed\": 0\n        },\n        \"issue_dependencies_summary\": {\n            \"blocked_by\": 0,\n            \"total_blocked_by\": 0,\n            \"blocking\": 0,\n            \"total_blocking\": 0\n        },\n        \"body\": \"This issue was created using the GitHub API via Postman.\",\n        \"closed_by\": null,\n        \"reactions\": {\n            \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/reactions\",\n            \"total_count\": 0,\n            \"+1\": 0,\n            \"-1\": 0,\n            \"laugh\": 0,\n            \"hooray\": 0,\n            \"confused\": 0,\n            \"heart\": 0,\n            \"rocket\": 0,\n            \"eyes\": 0\n        },\n        \"timeline_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/timeline\",\n        \"performed_via_github_app\": null,\n        \"state_reason\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test issue from Postman\",\r\n  \"body\": \"This issue was created using the GitHub API via Postman.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Method Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.github+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Test issue from Postman\",\r\n  \"body\": \"This issue was created using the GitHub API via Postman.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:13:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2368"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "\"cd665a764d18e93514344b1e3a8bfdc89180b99019640052b310131a9f1de53c\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "Location",
+							"value": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/2"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4998"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "2"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "F4B3:6A267:3D81D9:5B1F8B:69416927"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2\",\n    \"repository_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test\",\n    \"labels_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2/labels{/name}\",\n    \"comments_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2/comments\",\n    \"events_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2/events\",\n    \"html_url\": \"https://github.com/Nadia-Odame/postman-test/issues/2\",\n    \"id\": 3734970770,\n    \"node_id\": \"I_kwDOQpMf3c7enyGS\",\n    \"number\": 2,\n    \"title\": \"Test issue from Postman\",\n    \"user\": {\n        \"login\": \"Nadia-Odame\",\n        \"id\": 221729107,\n        \"node_id\": \"U_kgDODTdRUw\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/221729107?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/Nadia-Odame\",\n        \"html_url\": \"https://github.com/Nadia-Odame\",\n        \"followers_url\": \"https://api.github.com/users/Nadia-Odame/followers\",\n        \"following_url\": \"https://api.github.com/users/Nadia-Odame/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/Nadia-Odame/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/Nadia-Odame/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/Nadia-Odame/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/Nadia-Odame/orgs\",\n        \"repos_url\": \"https://api.github.com/users/Nadia-Odame/repos\",\n        \"events_url\": \"https://api.github.com/users/Nadia-Odame/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/Nadia-Odame/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n    },\n    \"labels\": [],\n    \"state\": \"open\",\n    \"locked\": false,\n    \"assignee\": null,\n    \"assignees\": [],\n    \"milestone\": null,\n    \"comments\": 0,\n    \"created_at\": \"2025-12-16T14:13:59Z\",\n    \"updated_at\": \"2025-12-16T14:13:59Z\",\n    \"closed_at\": null,\n    \"author_association\": \"OWNER\",\n    \"active_lock_reason\": null,\n    \"sub_issues_summary\": {\n        \"total\": 0,\n        \"completed\": 0,\n        \"percent_completed\": 0\n    },\n    \"issue_dependencies_summary\": {\n        \"blocked_by\": 0,\n        \"total_blocked_by\": 0,\n        \"blocking\": 0,\n        \"total_blocking\": 0\n    },\n    \"body\": \"This issue was created using the GitHub API via Postman.\",\n    \"closed_by\": null,\n    \"reactions\": {\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2/reactions\",\n        \"total_count\": 0,\n        \"+1\": 0,\n        \"-1\": 0,\n        \"laugh\": 0,\n        \"hooray\": 0,\n        \"confused\": 0,\n        \"heart\": 0,\n        \"rocket\": 0,\n        \"eyes\": 0\n    },\n    \"timeline_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/2/timeline\",\n    \"performed_via_github_app\": null,\n    \"state_reason\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Put Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"bug\", \"api-test\"]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/labels",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues",
+						"1",
+						"labels"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Put Method Response",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\"bug\", \"api-test\"]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/labels",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues",
+								"1",
+								"labels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:14:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"46d8e0b53abb42ef7d56f247620c6a675eae81e96e7edc1416c8eb4d8a536fe5\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4997"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "3"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "F4B7:BBD5D:3D0D61:5AAE07:69416949"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 9833770311,\n        \"node_id\": \"LA_kwDOQpMf3c8AAAACSiNtRw\",\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/bug\",\n        \"name\": \"bug\",\n        \"color\": \"d73a4a\",\n        \"default\": true,\n        \"description\": \"Something isn't working\"\n    },\n    {\n        \"id\": 9834024234,\n        \"node_id\": \"LA_kwDOQpMf3c8AAAACSidNKg\",\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/api-test\",\n        \"name\": \"api-test\",\n        \"color\": \"ededed\",\n        \"default\": false,\n        \"description\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Patch Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated API Test Issue\",\r\n  \"state\": \"open\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Patch Method Response",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated API Test Issue\",\r\n  \"state\": \"open\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:15:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b35f82935900ff182ac2cd26112a6538a583ef484980845b96e916986779b022\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4996"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "4"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "F4B7:BBD5D:3D14E8:5AB82B:69416949"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1\",\n    \"repository_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test\",\n    \"labels_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/labels{/name}\",\n    \"comments_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/comments\",\n    \"events_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/events\",\n    \"html_url\": \"https://github.com/Nadia-Odame/postman-test/issues/1\",\n    \"id\": 3731170481,\n    \"node_id\": \"I_kwDOQpMf3c7eZSSx\",\n    \"number\": 1,\n    \"title\": \"Updated API Test Issue\",\n    \"user\": {\n        \"login\": \"Nadia-Odame\",\n        \"id\": 221729107,\n        \"node_id\": \"U_kgDODTdRUw\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/221729107?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/Nadia-Odame\",\n        \"html_url\": \"https://github.com/Nadia-Odame\",\n        \"followers_url\": \"https://api.github.com/users/Nadia-Odame/followers\",\n        \"following_url\": \"https://api.github.com/users/Nadia-Odame/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/Nadia-Odame/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/Nadia-Odame/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/Nadia-Odame/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/Nadia-Odame/orgs\",\n        \"repos_url\": \"https://api.github.com/users/Nadia-Odame/repos\",\n        \"events_url\": \"https://api.github.com/users/Nadia-Odame/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/Nadia-Odame/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n    },\n    \"labels\": [\n        {\n            \"id\": 9833770311,\n            \"node_id\": \"LA_kwDOQpMf3c8AAAACSiNtRw\",\n            \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/bug\",\n            \"name\": \"bug\",\n            \"color\": \"d73a4a\",\n            \"default\": true,\n            \"description\": \"Something isn't working\"\n        },\n        {\n            \"id\": 9834024234,\n            \"node_id\": \"LA_kwDOQpMf3c8AAAACSidNKg\",\n            \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/labels/api-test\",\n            \"name\": \"api-test\",\n            \"color\": \"ededed\",\n            \"default\": false,\n            \"description\": null\n        }\n    ],\n    \"state\": \"open\",\n    \"locked\": false,\n    \"assignee\": null,\n    \"assignees\": [],\n    \"milestone\": null,\n    \"comments\": 0,\n    \"created_at\": \"2025-12-15T16:19:05Z\",\n    \"updated_at\": \"2025-12-16T14:14:33Z\",\n    \"closed_at\": null,\n    \"author_association\": \"OWNER\",\n    \"active_lock_reason\": null,\n    \"sub_issues_summary\": {\n        \"total\": 0,\n        \"completed\": 0,\n        \"percent_completed\": 0\n    },\n    \"issue_dependencies_summary\": {\n        \"blocked_by\": 0,\n        \"total_blocked_by\": 0,\n        \"blocking\": 0,\n        \"total_blocking\": 0\n    },\n    \"body\": \"This issue was created using the GitHub API via Postman.\",\n    \"closed_by\": null,\n    \"reactions\": {\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/reactions\",\n        \"total_count\": 0,\n        \"+1\": 0,\n        \"-1\": 0,\n        \"laugh\": 0,\n        \"hooray\": 0,\n        \"confused\": 0,\n        \"heart\": 0,\n        \"rocket\": 0,\n        \"eyes\": 0\n    },\n    \"timeline_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/timeline\",\n    \"performed_via_github_app\": null,\n    \"state_reason\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Comment created\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"pm.environment.set(\"comment_id\", jsonData.id);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"body\": \"This comment was created for DELETE testing using Postman.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/comments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Post Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.github+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"This comment was created for DELETE testing using Postman.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/1/comments",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues",
+								"1",
+								"comments"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:15:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1684"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=60, s-maxage=60"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "ETag",
+							"value": "\"2f09a05c0e57b128063d7c145eccba91aa05fa3d9a1576589b18df9813328cc4\""
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "Location",
+							"value": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/comments/3660764423"
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4995"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "5"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "F4C1:162679:3F2D33:5D598E:6941698D"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/comments/3660764423\",\n    \"html_url\": \"https://github.com/Nadia-Odame/postman-test/issues/1#issuecomment-3660764423\",\n    \"issue_url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/1\",\n    \"id\": 3660764423,\n    \"node_id\": \"IC_kwDOQpMf3c7aMtUH\",\n    \"user\": {\n        \"login\": \"Nadia-Odame\",\n        \"id\": 221729107,\n        \"node_id\": \"U_kgDODTdRUw\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/221729107?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/Nadia-Odame\",\n        \"html_url\": \"https://github.com/Nadia-Odame\",\n        \"followers_url\": \"https://api.github.com/users/Nadia-Odame/followers\",\n        \"following_url\": \"https://api.github.com/users/Nadia-Odame/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/Nadia-Odame/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/Nadia-Odame/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/Nadia-Odame/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/Nadia-Odame/orgs\",\n        \"repos_url\": \"https://api.github.com/users/Nadia-Odame/repos\",\n        \"events_url\": \"https://api.github.com/users/Nadia-Odame/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/Nadia-Odame/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n    },\n    \"created_at\": \"2025-12-16T14:15:41Z\",\n    \"updated_at\": \"2025-12-16T14:15:41Z\",\n    \"author_association\": \"OWNER\",\n    \"body\": \"This comment was created for DELETE testing using Postman.\",\n    \"reactions\": {\n        \"url\": \"https://api.github.com/repos/Nadia-Odame/postman-test/issues/comments/3660764423/reactions\",\n        \"total_count\": 0,\n        \"+1\": 0,\n        \"-1\": 0,\n        \"laugh\": 0,\n        \"hooray\": 0,\n        \"confused\": 0,\n        \"heart\": 0,\n        \"rocket\": 0,\n        \"eyes\": 0\n    },\n    \"performed_via_github_app\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/comments/3660764423",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"Nadia-Odame",
+						"postman-test",
+						"issues",
+						"comments",
+						"3660764423"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Method Response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.github+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.github.com/repos/Nadia-Odame/postman-test/issues/comments/3660764423",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"Nadia-Odame",
+								"postman-test",
+								"issues",
+								"comments",
+								"3660764423"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 16 Dec 2025 14:17:46 GMT"
+						},
+						{
+							"key": "X-OAuth-Scopes",
+							"value": "repo"
+						},
+						{
+							"key": "X-Accepted-OAuth-Scopes",
+							"value": ""
+						},
+						{
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3; format=json"
+						},
+						{
+							"key": "x-github-api-version-selected",
+							"value": "2022-11-28"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "origin-when-cross-origin, strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding, Accept, X-Requested-With"
+						},
+						{
+							"key": "Server",
+							"value": "github.com"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "4993"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1765898000"
+						},
+						{
+							"key": "X-RateLimit-Used",
+							"value": "7"
+						},
+						{
+							"key": "X-RateLimit-Resource",
+							"value": "core"
+						},
+						{
+							"key": "X-GitHub-Request-Id",
+							"value": "D889:BBD5D:3D3E28:5AF249:69416A09"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
